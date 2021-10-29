@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { JsonDataService } from '../json-data.service';
 
 export interface PeriodicElement {
   name: string;
@@ -27,8 +28,8 @@ const ELEMENT_DATA: PeriodicElement[] = [
 })
 export class DataTableCompComponent {
   title: string = 'TABLE';
-  constructor() {}
+  constructor(private dataService: JsonDataService) {}
 
-  displayedColumns: string[] = ['position', 'name', 'weight', 'symbol'];
-  dataSource = ELEMENT_DATA;
+  displayedColumns: string[] = ['anwendung', 'icompany'];
+  dataSource = this.dataService.getJsonData();
 }
