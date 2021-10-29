@@ -17,6 +17,7 @@ import { ProductDetailsComponent } from './product-details/product-details.compo
 import { CartComponent } from './cart/cart.component';
 import { ShippingComponent } from './shipping/shipping.component';
 import { DataTableCompComponent } from './data-table-comp/data-table-comp.component';
+import { JsonDataComponent } from './json-data/json-data.component';
 
 @NgModule({
   imports: [
@@ -29,6 +30,7 @@ import { DataTableCompComponent } from './data-table-comp/data-table-comp.compon
       { path: 'cart', component: CartComponent },
       { path: 'shipping', component: ShippingComponent },
       { path: 'table', component: DataTableCompComponent },
+      { path: 'data', component: JsonDataComponent },
     ]),
     MatInputModule,
     MatTableModule,
@@ -45,6 +47,7 @@ import { DataTableCompComponent } from './data-table-comp/data-table-comp.compon
     CartComponent,
     ShippingComponent,
     DataTableCompComponent,
+    JsonDataComponent,
   ],
   bootstrap: [AppComponent],
 })

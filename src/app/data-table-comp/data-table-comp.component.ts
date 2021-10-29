@@ -26,6 +26,7 @@ const ELEMENT_DATA: PeriodicElement[] = [
   styleUrls: ['./data-table-comp.component.scss'],
 })
 export class DataTableCompComponent {
+  title: string = 'TABLE';
   constructor() {}
 
   displayedColumns: string[] = ['position', 'name', 'weight', 'symbol'];
